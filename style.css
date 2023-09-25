@@ -1,0 +1,395 @@
+/**
+ * Theme Name: LIFO Pro
+ * Author: LP Creative Co
+ * Version: 1.0
+**/
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.wrapper:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.wrapper .row {
+    max-width: none !important;
+}
+
+.home .blog_slider .blog_item .category {
+	height: 38px;
+	overflow-y: hidden;
+}
+/* Single Post */
+.single-offerings .main-content,
+.single-post .main-content{
+    position: relative;
+}
+.single-post .lifo-pdf-buttons .export-pdf{
+    margin-right: 7px !important;
+    margin-top: 1px;
+}
+.single-post .lifo-pdf-buttons .lifo-save-pdf{
+    margin-top: -16px !important;
+}
+.single-post .lifo-pdf-buttons .lifo-save-pdf img {
+    max-width: 31px !important;
+    margin-top: -5px !important;
+}
+.single-offerings .fas.fa-link,
+.single-offerings .fas.fa-print,
+.single-post .fas.fa-link,
+.single-post .fas.fa-print{
+    color: #3d454d;
+}
+.single-offerings .content_buttons,
+.single-post .content_buttons {
+    position: absolute;
+    right: 77px;
+    top: -1px;
+}
+.single-offerings .content_buttons .copied,
+.single-post .content_buttons .copied{
+    display: none;
+    opacity: 0.5;
+    background-color: black;
+    font-size: 14px;
+    padding: 3px 5px;
+    color: white;
+    position: absolute;
+    top: -15px;
+    left: -7px;
+}
+.single-offerings .content_buttons button,
+.single-post .content_buttons button{
+    cursor: pointer;
+    padding: 0px 7px;
+    font-size: 20px;
+    background-color: transparent;
+}
+.section-top{
+    position: relative;
+    height: 90px;
+}
+.single-offerings .content_buttons{
+    right: 125px;
+    top: 40px;
+}
+/* End Single Post */
+.lifo-pdf-buttons .export-pdf {
+	margin-right: 40px;
+	height: 22px;
+    top: 20px;
+}
+.lifo-pdf-buttons .lifo-save-pdf img {
+    top: 14px !important;
+}
+
+.lifo-button {
+    border-color: #f2f2f2;
+}
+.lifo-button:not(.single).color-blue {
+    background-color: #008FD5;
+    color: white; 
+}
+.lifo-button:not(.single).color-blue:hover {
+    background-color: #09aeff;
+}
+.lifo-button:not(.single).color-green {
+    background-color: #00D579;
+    color: white; 
+    margin-bottom:20px;
+}
+.lifo-button:not(.single).color-green:hover {
+    background-color: #09ff95;
+}
+.lifo-button.right {
+    margin-bottom: 20px;
+}
+a.pdfemb-viewer {
+    background-color: #008FD5;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 11px 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+}
+.main_content_inner .content_buttons {
+    top: 10px;
+}
+/* Table
+*******************************/
+.single-offerings table{
+    width: auto;
+    max-width: 100%;
+}
+.thumbnail_image{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Make the Offerings & Resources “submenus” sticky 
+*******************************/
+.sticky-sub-menu {
+    position: fixed;
+    left: 0;
+    width: 100%; 
+    background-color: #707070;
+    z-index: 9;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Print
+*******************************/
+.single_post .date-author{
+    display: flex;
+    justify-content: space-between;
+}
+.single-post .content_buttons {
+    top: 4px;
+}
+.single_post .date-author p:last-child{
+    margin-right: 155px;
+}
+.single_post .lifo-pdf-buttons{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.single_post .top-date a{
+    text-decoration: none;
+    margin-bottom: 0;
+    line-height: 23px;
+}
+.single_post .top-date .content_buttons{
+    display: flex;
+}
+.single_post .content_buttons .entry-date{
+    margin-right: 15px;
+}
+.single_post .content_buttons p{
+    margin-bottom: 0;
+}
+.single_post .content_buttons .entry-date i{
+    font-size: 21px;
+}
+.single-post .date-author .entry-date{
+    position: relative;
+    margin-left: 9px;
+}
+.single-post .date-author .entry-date:before{
+    content: "";
+    width: 2px;
+    height: 13px;
+    background-color: rgba(134, 134, 134, 0.52);
+    position: absolute;
+    top: 5px;
+    left: -0.4222em;
+}
+@media screen and (min-width: 1400px) {
+    #home-slider .slider-caption,
+    .main-content >.row,
+    body > .row,
+    body > div > .row,
+    .footer > .row,
+    .header_main,
+    .top_links > .row,
+    .thumbnail_image .thumbnail_wrap > .row,
+    .wrapper {
+        max-width: 90%;
+    }
+}
+@media screen and (min-width: 1921px) {
+    .main-content >.row > .large-8,
+    body > .row > .large-8 {
+        padding-right: 2.2%;
+        width: calc(100% - 420px);
+    }
+    .main-content >.row > .large-4.sidebar,
+    body > .row > .large-4.sidebar {
+        width: 420px;
+    }
+    .xxl-4 {
+        width: 33.33333%;
+    }
+
+    .ubermenu-main > .ubermenu-nav {
+        text-align: right !important;
+        padding-right: 280px !important;
+    }
+    .ubermenu-main .ubermenu-item.ubermenu-item-level-0 {
+        float: none !important;
+    }
+    .ubermenu-main .ubermenu-nav > li:first-child {
+        position: absolute;
+        left: 0;
+    }
+    .ubermenu-main .ubermenu-nav > li:last-child {
+        position: absolute;
+        right: 0;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .ubermenu-main .ubermenu-item-level-0:not(:first-child):not(:last-child) {
+        margin-top: 8px !important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .top_links a{
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width: 1024px) {
+	#home-slider .slide-overlay .lifo-pdf-buttons {
+        min-height: 15px !important;
+    }
+    body.single-offerings{
+        padding-top: 61px;
+    }
+     .sup-accordion.resources .row .sup-accordion-head{ 
+        padding: 0 30px;
+    }
+    .tabcontent .sup-accordion > .row .sup-accordion-head{
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+    .single_post .date-author p:last-child {
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    a.pdfemb-viewer {
+        font-size: 16px;
+        width: 100% !important;
+        margin-top: -1px;
+        padding: 14px 0;
+    }
+    .top_links.hide-for-large{
+        display: flex;
+        overflow: scroll;
+    }
+    .top_links.hide-for-large a{
+        min-width: 132px;
+    }
+    .thumbnail_image{
+        margin-top: 60px;
+    }
+    .sup-accordion.resources .row .sup-accordion-head {
+        padding: 0 0px;
+    }
+    .single_post .top-date{
+        position: absolute;
+        top: -66px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .single_post .date-author{
+        width: 100%;
+    }
+    .single_post .date-author p:last-child {
+        margin-right: 0px;
+    }
+    .single_post .lifo-pdf-buttons{
+        top: -33px;
+    }
+    body.single-post .single_post{
+        padding-top: 86px;
+    }
+    .date-author p{
+        font-size: 15px;
+    }
+}
+
+/** Printing 
+ ----------------------*/
+
+.sp-footer,
+.sp-title{
+	display: none;
+}
+@media print {
+    @page {
+        size:8.5in 11in; 
+        margin: 1cm 2cm ;
+    }
+    body,
+    body.logged-in,
+    body.admin-bar {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .main_content_inner {
+        padding-top: 0 !important;
+    }
+    .sp-title {
+        margin-top: 0 !important;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+    .sp-footer,
+    .sp-title{
+         display: block;
+     } 
+    .lifo-pdf-buttons,
+    .main_content_inner .content_buttons,
+    iframe,
+    .single-post .sidebar,
+    .single-post .content_buttons {
+        display: none !important;
+    }
+    p {
+        page-break-inside: avoid;
+    }
+    .page-template-template-software-page h2{
+        margin-top: 25px;
+    }
+    .sp-footer{
+        display: block; 
+        position: fixed; 
+        bottom: 0; 
+        clear:both;
+        padding-left: 18px;
+    }
+    .sp-footer p{
+        margin-bottom: -5px;
+        font-size: 15px;
+    }
+    a[href]:after {
+        display: none;
+    }
+    .mylivechat_inline.mylivechat_template1{
+        display: none;
+    }
+    img[imageurlhover$=".png"]{
+        display: none;
+    }
+    .single-post .column,
+    .single-post .large-8 {
+        width: 100% !important;
+    }
+    .single-post img {
+        page-break-inside:auto !important;
+    }
+    .single-post .thumbnail_image .thumbnail_wrap{
+        padding-top: 40px;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    table {
+        page-break-inside:auto !important;
+    }
+    tr { 
+        page-break-inside:avoid !important;
+        page-break-after:auto !important;
+    }
+}

@@ -1,0 +1,89 @@
+/* -----------------------------------------
+   Home page slider
+----------------------------------------- */
+
+#home-slider {
+	.slick-slide {
+		position: relative;
+		height: 670px; /*define the height of slide*/
+		background-size: cover;
+    	background-position: center top;
+    	background-repeat: no-repeat;
+		@include transition(height .3s ease);
+	}
+	.slider-caption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		max-width: 1200px;
+		padding: 5px 10px;
+		@include transform (translate(-50%, -50%));
+		p, h3 {
+			color: #fff;
+		}
+		p {
+			font-family: $font_second;
+			line-height: 1.2;
+		}
+		h3 {
+			font-size: 70px;
+			font-weight: bold;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+	}
+	.slide-overlay {
+		background-color: rgba(0,143,213,0.5);
+	   position: absolute;
+	   top: 0;
+	   bottom: 0;
+	   right: 0;
+	   left: 0;
+	}
+	.slick-dots li button:before {
+		width: 16px;
+    	height: 16px;
+    	background-color: #fff;
+	}
+	.slick-dots {
+		bottom: 5px;
+		li {
+			margin: 0 7px;
+		}
+	}
+	.slick-dots li button:hover:before, .slick-dots li.slick-active button:before {
+		background-color: $blue;
+	}
+	.pagelink {
+	   font-size: 24px;
+    	padding: 10px 40px;
+    	margin-top: 55px;
+    	font-family: $font_second;
+	}
+}
+
+@media only screen and (max-width: 1370px) {
+	#home-slider {
+		.slick-slide {
+			height: 520px; /*define the height of slide*/
+		}
+	}
+}
+
+// @media only screen and (max-width: 1024px) {
+// 	#home-slider {
+// 		.slick-slide {
+// 			height: 550px; /*define the height of slide*/
+// 		}
+// 	}
+// }
+
+@media only screen and (max-width: 640px) {
+	#home-slider {
+		.slick-slide {
+			height: 450px; /*define the height of slide*/
+			background-position: 60% 50% !important;
+		}
+	}
+}

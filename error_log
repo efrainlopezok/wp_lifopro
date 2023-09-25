@@ -1,0 +1,41 @@
+[04-Oct-2019 07:28:59 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/index.php on line 7
+[17-Nov-2019 21:11:06 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[18-Nov-2019 00:03:01 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[13-Dec-2019 06:47:47 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[13-Dec-2019 07:58:59 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[15-Dec-2019 07:00:23 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[15-Dec-2019 08:56:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[11-Jan-2020 17:58:59 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[13-Jan-2020 13:16:21 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[14-Jan-2020 18:16:17 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6
+[15-Jan-2020 15:01:31 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/lifopro/public_html/wp-content/themes/lifopro/404.php on line 6

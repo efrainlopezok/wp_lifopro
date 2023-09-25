@@ -1,0 +1,148 @@
+<?php
+/**
+ * Template Name: Software Support Page Old
+ */
+get_header(); ?>
+
+<!-- BEGIN of main content -->
+<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+
+		<!-- HERO SECTION -->
+		<?php show_template('hero_section'); ?>
+
+		<!-- BREADCRUMBS -->
+		<?php show_template('breadcrumbs'); ?>
+
+		<!-- YELLOW BLOCK -->
+		<div class="row container_row">
+			<div class="medium-12 columns yellow_block">
+				<div class="row">
+					<div class="large-2 medium-12 columns attention">
+						<?php if($image = get_field('image')): ?>
+							<img class="image" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<?php endif; ?>
+					</div>
+					<div class="large-10 medium-12 columns pdf">
+						<?php the_content(); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- RESOURCES and Support -->
+		<div class="sup-accordion resources">
+			<div class="row column">
+				<div class="sup-accordion-head">
+					<?php if($top_label = get_field('accordion_label')): ?>
+
+						<h2 class="sup-accordion__title"><?php echo $top_label; ?></h2>
+
+						<?php if($accordion_label_subtitle = get_field('accordion_label_subtitle')): ?>
+							<p class="sup-accordion__subtitle"><?php echo $accordion_label_subtitle; ?></p>
+						<?php endif; ?>
+
+					<?php endif; ?>
+
+					<button class="sup-accordion-button"><?php _e('Collapse all') ?></button>
+
+				</div>
+
+				<ul class="accordion sup-accordion__body" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+					<?php $i = 1; if( have_rows('support_accordion') ):
+					while ( have_rows('support_accordion') ) : the_row();
+						?>
+						<li class="accordion-item <?php echo $i==1 ? 'is-active' : '';?>
+							<?php echo $i%2 ? 'is-even' : '';?> " data-accordion-item>
+
+							<a href="#" class="accordion-title"><?php the_sub_field('title'); ?></a>
+
+							<div class="accordion-content" data-tab-content <?php echo $i==1 ? 'accordion-content--active' : '';?>>
+								<?php the_sub_field('content'); ?>
+							</div>
+
+						</li>
+						<?php $i++; endwhile;
+						endif; ?>
+					</ul>
+
+				</div>
+			</div>
+
+
+
+			<!-- SUPPORT SERVICES -->
+			<!-- <div class="support_services resources">
+				<div class="row">
+					<div class="medium-12 columns">
+						<?php if($top_label = get_field('top_label')): ?>
+							<h2><?php echo $top_label; ?></h2>
+					</div>
+					<?php endif; ?>
+					<?php $i = 1; if( have_rows('support_services') ):
+					    while ( have_rows('support_services') ) : the_row();
+					 		?>
+					      <div class="large-4 medium-6 columns matchHeight">
+					      	<h3 class="number"><?php echo $i++; ?></h3>
+					      	<?php the_sub_field('content'); ?>
+					      </div>
+					   <?php endwhile;
+					endif; ?>
+				</div>
+			</div>-->
+
+			<!-- ADDITIONAL RESOURCES -->
+			<!-- <div class="additional_resources resources">
+				<div class="row">
+					<div class="medium-12 columns">
+						<?php if($top_label_second = get_field('top_label_second')): ?>
+							<h2><?php echo $top_label_second; ?></h2>
+						<?php endif; ?>
+					</div>
+					<?php if( have_rows('additional_resources') ):
+					    while ( have_rows('additional_resources') ) : the_row();
+					 		?>
+					      <div class="large-4 medium-6 columns matchHeight">
+					      	<?php the_sub_field('content'); ?>
+					      </div>
+					   <?php endwhile;
+					endif; ?>
+				</div>
+			</div> -->
+
+			<!-- LINKS -->
+			<div class="section_links">
+				<div class="row">
+					<?php if( have_rows('custom_links') ):
+					while ( have_rows('custom_links') ) : the_row();
+						?>
+						<div class="large-3 medium-6 columns link_columns matchHeight">
+							<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a>
+						</div>
+					<?php endwhile;
+					endif; ?>
+				</div>
+			</div>
+
+			<!-- CONTACT FORM -->
+			<div class="section_updates">
+				<div class="row">
+					<div class="large-6 medium-12 columns">
+						<?php if($left_column_label = get_field('left_column_label')): ?>
+							<?php echo $left_column_label; ?>
+						<?php endif; ?>
+					</div>
+					<div class="large-6 medium-12 columns contact_form">
+						<?php if($contact_form = get_field('contact_form')): ?>
+							<?php echo do_shortcode($contact_form); ?>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
+
+
+		<?php endwhile; ?>
+	<?php endif; ?>
+	<!-- END of main content -->
+
+	<?php get_footer(); ?>
